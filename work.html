@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work — Govardhan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=DM+Sans:wght@300;400;500&family=Cormorant+Garamond:wght@700&family=DM+Serif+Display:ital@0;1&family=Libre+Baskerville:wght@700&family=Bodoni+Moda:opsz,wght@6..96,700&family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="src/css/main.css" />
+  <link rel="stylesheet" href="src/css/work.css" />
+</head>
+<body>
+  <div class="site-wrapper">
+
+    <header class="site-header">
+      <a href="index.html" class="site-name">Govardhan</a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="work.html" class="active">Work</a>
+        <a href="university.html">University</a>
+        <a href="personal.html">Personal</a>
+      </nav>
+    </header>
+
+    <section class="page-section work-hero-centered">
+      <span class="section-eyebrow">Work</span>
+      <h1 class="section-heading">Building and Deploying<br/>the Applications</h1>
+      <p class="section-intro hero-intro">I worked engineering <span class="hi">backend services</span> and <span class="hi">cloud native deployments</span> at <span class="hi">Oracle</span>. My work spans Java, Spring Boot, Kafka, Linux, Kubernetes, and <span class="hi">Oracle Cloud Infrastructure</span> while partnering closely with infrastructure teams to ensure environment availability and application uptime.</p>
+      <div class="work-links">
+        <a href="assets/docs/Golla_Govardhan_Software_Engineer.pdf" target="_blank" class="button button-primary">Resume</a>
+        <a href="https://linkedin.com/in/govardhang" target="_blank" class="button">LinkedIn</a>
+        <a href="https://github.com/GovardhanGova7277" target="_blank" class="button">GitHub</a>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <section class="page-section work-experience">
+      <div class="experience-header">
+        <h3 class="section-heading">Work Experience</h3>
+        <p class="section-intro">From architecting scalable Java services to orchestrating cloud deployments with Kubernetes, each role has honed my expertise in turning complex challenges into seamless, high-performance solutions.</p>
+      </div>
+      <div class="exp-list" id="work-exp"></div>
+      <div class="experience-summary">
+        <span class="section-eyebrow">Tech Stack</span>
+        <div class="tag-cloud-work" id="work-skills"></div>
+      </div>
+    </section>
+
+    <section class="page-section work-certs">
+      <h3 class="section-heading">Certificates</h3>
+      <p class="section-intro">Continuous learning is my compass. These certifications validate my mastery of critical skills from cloud architecture to AI fundamentals, ensuring I stay at the forefront of industry advancements.</p>
+      <div class="cert-carousel" id="work-certs"></div>
+    </section>
+
+    <footer class="site-footer">
+      <p>Govardhan Golla &mdash; <a href="mailto:govardhan.golla.yadav@gmail.com">govardhan.golla.yadav@gmail.com</a></p>
+    </footer>
+
+  </div>
+  <script src="src/js/data.js"></script>
+  <script src="src/js/render.js"></script>
+  <script src="src/js/main.js"></script>
+  <script>renderWork();</script>
+</body>
+</html>

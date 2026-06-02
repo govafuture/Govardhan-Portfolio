@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>University - Govardhan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=DM+Sans:wght@300;400;500&family=Cormorant+Garamond:wght@700&family=DM+Serif+Display:ital@0;1&family=Libre+Baskerville:wght@700&family=Bodoni+Moda:opsz,wght@6..96,700&family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="src/css/main.css" />
+  <link rel="stylesheet" href="src/css/university.css" />
+</head>
+<body>
+  <div class="site-wrapper">
+
+    <header class="site-header">
+      <a href="index.html" class="site-name">Govardhan</a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="work.html">Work</a>
+        <a href="university.html" class="active">University</a>
+        <a href="personal.html">Personal</a>
+      </nav>
+    </header>
+
+    <!-- ── SECTION 01 - University Info ── -->
+    <section class="page-section uni-hero">
+      <div class="uni-hero-info">
+        <span class="section-eyebrow">University</span>
+        <h1 class="section-heading">Jain University,<br/>Bangalore</h1>
+        <p class="section-intro">B.Tech in Information Science Engineering - a rigorous program that built my foundation in core computer science, hands-on project experience, and exposure to competitive events and research.</p>
+        <div class="uni-stats">
+          <div class="uni-stat">
+            <span class="uni-stat-value">9.4</span>
+            <span class="uni-stat-label">CGPA / 10</span>
+          </div>
+          <div class="uni-stat-divider"></div>
+          <div class="uni-stat">
+            <span class="uni-stat-value">3<sup>rd</sup></span>
+            <span class="uni-stat-label">Dept. Rank</span>
+          </div>
+          <div class="uni-stat-divider"></div>
+          <div class="uni-stat">
+            <span class="uni-stat-value">4</span>
+            <span class="uni-stat-label">Years</span>
+          </div>
+        </div>
+        <div class="uni-meta-row">
+          <span class="uni-year-tag">2021 – 2025</span>
+          <span class="uni-location-tag">Bangalore, India</span>
+        </div>
+      </div>
+      <div class="uni-hero-image">
+        <img src="assets/images/profile/IMG_2513.jpeg" alt="Jain University" />
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ── SECTION 02 - Projects ── -->
+    <section class="page-section">
+      <div class="section-row-header">
+        <span class="section-eyebrow">Projects</span>
+        <h2 class="section-heading">Academic Projects</h2>
+        <p class="section-intro">Applying classroom theory to real-world problems - from authentication systems to face recognition, each project sharpened my ability to build end-to-end working software.</p>
+      </div>
+      <div class="uni-projects-grid" id="uni-projects"></div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ── SECTION 03 - Club Activities ── -->
+    <section class="page-section">
+      <div class="section-row-header">
+        <span class="section-eyebrow">Leadership</span>
+        <h2 class="section-heading">Club Activities</h2>
+      </div>
+      <div class="club-card-overlay" id="club-activities"></div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ── SECTION 04 - Skills & Coursework ── -->
+    <section class="page-section">
+      <div class="section-row-header">
+        <span class="section-eyebrow">Coursework</span>
+        <h2 class="section-heading">Skills &amp; Technologies</h2>
+      </div>
+      <div class="tag-cloud-uni" id="uni-skills"></div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ── SECTION 05 - Certifications ── -->
+    <section class="page-section">
+      <div class="section-row-header">
+        <span class="section-eyebrow">Certifications</span>
+        <h2 class="section-heading">Certificates</h2>
+        <p class="section-intro">Industry-recognized certifications that validate my skills across Python, web development, and data science - earned alongside my academic coursework.</p>
+      </div>
+      <div class="cert-carousel">
+        <div class="cert-track-auto" id="uni-certs"></div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <p>Govardhan Golla &mdash; <a href="mailto:govardhan.golla.yadav@gmail.com">govardhan.golla.yadav@gmail.com</a></p>
+    </footer>
+
+  </div>
+  <script src="src/js/data.js"></script>
+  <script src="src/js/render.js"></script>
+  <script src="src/js/cursor.js"></script>
+  <script src="src/js/main.js"></script>
+  <script>renderUniversity();</script>
+</body>
+</html>

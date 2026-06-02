@@ -1,0 +1,360 @@
+/* ═══════════════════════════════════════════════════════
+   UNIVERSITY PAGE — Clean, modern redesign
+   Hero → Projects → Club → Skills → Certifications
+   ═══════════════════════════════════════════════════════ */
+
+/* ── HERO — split: info left + image right ── */
+.uni-hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  align-items: center;
+  padding: 3.5rem 0 2.5rem;
+}
+
+@media (min-width: 820px) {
+  .uni-hero {
+    grid-template-columns: 1.1fr 1fr;
+    gap: 3rem;
+  }
+}
+
+.uni-hero-info .section-eyebrow {
+  margin-bottom: 1rem;
+}
+
+.uni-hero-info .section-heading {
+  margin-bottom: 1.25rem;
+  line-height: 1.12;
+}
+
+.uni-hero-info .section-intro {
+  max-width: 480px;
+}
+
+/* ── Stats row ── */
+.uni-stats {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 1.5rem 0 1.2rem;
+}
+
+.uni-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.uni-stat-value {
+  font-family: var(--serif);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1.1;
+}
+
+.uni-stat-value sup {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.uni-stat-label {
+  font-size: 0.72rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+}
+
+.uni-stat-divider {
+  width: 1px;
+  height: 36px;
+  background: var(--border);
+}
+
+/* ── Meta row ── */
+.uni-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.uni-year-tag,
+.uni-location-tag {
+  font-size: 0.78rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--text);
+  font-weight: 400;
+}
+
+/* ── Hero image ── */
+.uni-hero-image {
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(0,0,0,0.1);
+  border: 1px solid var(--border);
+}
+
+.uni-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  min-height: 320px;
+  max-height: 440px;
+}
+
+/* ── SECTION ROW HEADER ── */
+.section-row-header {
+  margin-bottom: 2.5rem;
+}
+
+.section-row-header .section-eyebrow {
+  margin-bottom: 0.8rem;
+}
+
+.section-row-header .section-heading {
+  margin-bottom: 0.75rem;
+}
+
+/* ── PROJECTS GRID — modern cards ── */
+.uni-projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 700px) {
+  .uni-projects-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+  }
+}
+
+.uni-project-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  transition: transform 0.3s ease, border-color 0.2s ease, box-shadow 0.3s ease;
+}
+
+.uni-project-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+  box-shadow: 0 14px 36px rgba(0,0,0,0.07);
+}
+
+.uni-project-number {
+  font-family: var(--serif);
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgba(181, 52, 28, 0.12);
+  line-height: 1;
+}
+
+.uni-project-card h4 {
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.3;
+  color: var(--text);
+}
+
+.uni-project-card p {
+  font-size: 0.88rem;
+  color: #4a4a4a;
+  line-height: 1.7;
+  margin: 0;
+  font-weight: 300;
+}
+
+.uni-project-card .tag-row {
+  margin-top: auto;
+}
+
+.uni-project-card .proj-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.25rem;
+}
+
+.uni-project-card .proj-links a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 0.95rem;
+  border-radius: 999px;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 500;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.uni-project-card .proj-links a:hover {
+  transform: translateY(-1px);
+  background: rgba(181, 52, 28, 0.08);
+  text-decoration: none;
+}
+
+/* ── CLUB — image with text overlay ── */
+.club-card-overlay {
+  position: relative;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+  min-height: 320px;
+  max-height: 420px;
+}
+
+.club-overlay-img {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  max-height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+.club-overlay-content {
+  position: absolute;
+  inset: 0;
+  padding: 2rem 2.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: linear-gradient(
+    180deg,
+    rgba(28, 28, 28, 0.0) 0%,
+    rgba(28, 28, 28, 0.45) 50%,
+    rgba(28, 28, 28, 0.88) 100%
+  );
+  color: #f5f4f1;
+}
+
+.club-overlay-content .club-label {
+  display: inline-block;
+  font-size: 0.65rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #1c1c1c;
+  background: #e07b2a;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  width: fit-content;
+  margin-bottom: 0.7rem;
+}
+
+.club-overlay-content h3 {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0 0 0.6rem;
+  line-height: 1.3;
+  color: #fff;
+}
+
+.club-overlay-content p {
+  color: rgba(255,255,255,0.78);
+  font-size: 0.88rem;
+  line-height: 1.75;
+  margin: 0 0 0.8rem;
+  font-weight: 300;
+  max-width: 560px;
+}
+
+.club-overlay-content .club-highlights {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.2rem;
+}
+
+.club-overlay-content .club-highlights li {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.5;
+  font-weight: 300;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.club-overlay-content .club-highlights li::before {
+  content: '\2192';
+  position: absolute;
+  left: 0;
+  color: #e07b2a;
+  font-size: 0.78rem;
+}
+
+/* ── SKILLS TAG CLOUD ── */
+.tag-cloud-uni {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.tag-cloud-uni .tag {
+  font-size: 0.82rem;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  transition: all 0.25s ease;
+}
+
+.tag-cloud-uni .tag:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(181, 52, 28, 0.1);
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 820px) {
+  .uni-hero {
+    grid-template-columns: 1fr;
+    padding: 2.5rem 0 1.5rem;
+  }
+
+  .uni-hero-image img {
+    min-height: 260px;
+    max-height: 320px;
+  }
+
+  .uni-stats {
+    gap: 1.2rem;
+  }
+
+  .uni-stat-value {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .club-card {
+    grid-template-columns: 1fr;
+  }
+
+  .club-image {
+    min-height: 220px;
+  }
+
+  .club-content {
+    padding: 1.5rem 1.3rem;
+  }
+
+  .uni-projects-grid {
+    grid-template-columns: 1fr;
+  }
+}

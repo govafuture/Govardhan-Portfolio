@@ -1,0 +1,223 @@
+/* ═══════════════════════════════════════════════════════
+   WORK PAGE — Refined layout
+   ═══════════════════════════════════════════════════════ */
+
+/* ── HERO — centered, no card wrapper ── */
+.work-hero-centered {
+  text-align: center;
+  padding: 4rem 0 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work-hero-centered .section-eyebrow {
+  margin-bottom: 1rem;
+}
+
+.work-hero-centered .section-heading {
+  max-width: 680px;
+  margin-bottom: 1.5rem;
+  line-height: 1.15;
+}
+
+.hero-intro {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+
+.work-hero-centered .work-links {
+  justify-content: center;
+  margin-top: 0;
+}
+
+/* ── WORK EXPERIENCE ── */
+.page-section.work-experience {
+  padding-top: 3rem;
+}
+
+.experience-header {
+  max-width: 720px;
+  margin-bottom: 2.5rem;
+}
+
+/* ── EXP ITEM — refined card ── */
+.exp-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.exp-item {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 1.8rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1.5rem;
+  align-items: start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.exp-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 44px rgba(0,0,0,0.06);
+}
+
+@media (max-width: 900px) {
+  .exp-item {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    padding: 1.4rem;
+  }
+}
+
+.exp-item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.exp-item-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.exp-logo {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  border-radius: 16px;
+  background: #f5f4f1;
+  padding: 0.65rem;
+  flex-shrink: 0;
+}
+
+.exp-role {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.25;
+}
+
+.exp-duration {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin: 0.25rem 0 0 0;
+  font-weight: 300;
+}
+
+.exp-item .exp-description {
+  margin: 0;
+  color: #4a4a4a;
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.exp-item ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.exp-item ul li {
+  position: relative;
+  padding-left: 1.2rem;
+  color: #424242;
+  font-size: 0.93rem;
+  line-height: 1.8;
+}
+
+.exp-item ul li::before {
+  content: '\2192';
+  position: absolute;
+  left: 0;
+  top: 0.1rem;
+  color: var(--accent);
+  font-size: 0.85rem;
+}
+
+.exp-item .tag-row {
+  margin-top: 0.5rem;
+}
+
+.exp-image {
+  min-width: 200px;
+  max-width: 240px;
+  flex-shrink: 0;
+}
+
+.exp-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  object-fit: cover;
+  border: 1px solid var(--border);
+}
+
+@media (max-width: 768px) {
+  .exp-image {
+    min-width: unset;
+    max-width: 100%;
+  }
+  .exp-image img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+  }
+}
+
+/* ── EXPERIENCE SUMMARY / TECH STACK ── */
+.experience-summary {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.experience-summary .section-eyebrow {
+  margin-bottom: 1rem;
+}
+
+.tag-cloud-work {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.tag-cloud-work .tag {
+  font-size: 0.82rem;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  transition: all 0.25s ease;
+}
+
+.tag-cloud-work .tag:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(181, 52, 28, 0.1);
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 640px) {
+  .work-hero-centered {
+    padding: 2.5rem 0 1.5rem;
+  }
+
+  .work-hero-centered .work-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work-hero-centered .work-links a {
+    width: 100%;
+    max-width: 280px;
+  }
+}
